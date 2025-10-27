@@ -1,16 +1,66 @@
 ---
-title: "Homepage"
+title: "ABOUT ME"
 output: 
-  html_document:
-  toc: true
-  toc_float: true
+  html_document
 ---
 
-Hi everyone! My name is Matariya, but I go by Mati for short. Welcome to my website!
-
-I am currently a Master of Public Health student at the Mailman School of Public Health at Columbia University specializing in Epidemiology with a certificate in Biostatistics and Public Health Data Science. 
-
 <div style="text-align:center;">
-  <img src="images/matariya_headshot.jpg" width="250" style="border-radius:50%; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
+  <img src="images/matariya_headshot.jpg" width="250" style="border-radius:50%; box-shadow:0px 4px 10px;">
 </div>
+
+<h1 style="text-align:center;">Matariya Krystal Rattanapan</h1>
+<h4 style="text-align:center;">Phone: (714)-261-6782</h4>
+<h4 style="text-align:center;">Email: mkr2158@cumc.columbia.edu</h4>
+
+## EDUCATION
+**Mailman School of Public Health, Columbia University (New York, NY)** <span style="float:right;">**Expected May 2026**</span>     
+Master of Public Health (MPH), Epidemiology | Certificate: Applied Biostatistics and Public Health Data Science
+
+- *Relevant Coursework: Applied Regression (using SAS), Research Methods + Applications, Analysis of Categorical Data*
+
+**College of Letters and Science, University of California, Berkeley (Berkeley, CA)**<span style="float:right;">**August 2020 - May 2024**</span>   
+B.A. Public Health | Minor: Public Policy
+
+- *Relevant Coursework: Intro to Epidemiology/Human Disease,  Intro to Probability/Statistics in Biology + Public Health (using R)*  
+  
+## WORK EXPERIENCE
+**Eye Physicians of the East Bay (Oakland, CA)** - *Medical Assistant/Ophthalmic Technician* <span style="float:right;">**July 2022 - March 2024**</span>      
+
+- Professionally facilitated comprehensive testings and screenings for eye care within ophthalmology for 25+ patients daily in preparation for routine exams and surgical procedures to aid in the doctors’ efficiency and effectiveness
+- Maintained electronic medical documentation of patients’ records and progress to ensure health concerns are addressed and confirmation of compliance with prescribed treatment plans and medications are met within the time period
+- Contributed as vital member in the healthcare team working with 20+ medical doctors, optometrists, and medical assistants
+- Sustained clinic’s credibility by performing sanitation and cleanliness duties across all exam rooms and equipments
+
+**Friends For Asia Foundation (Chiang Mai, Thailand)** - *Medical Intern* <span style="float:right;">**June 2023 - June 2023**</span>                 
+
+- Participated in medical work totaling 80 hours over the course of a 2 week period under the administration of both public and private hospitals, working in the internal medicine and ophthalmology department alongside physicians and medical students
+- Observed over 50+ medical consultations and examinations and 10+ surgeries, receiving training on using medical equipment  
+- Collaborated with 20+ medical students to learn about Thailand’s most infectious diseases such as Dengue fever and malaria through direct patient interactions and participated in oncology lectures and laboratory activities led by physicians
+
+## LEADERSHIP
+**Phi Delta Epsilon Pre Medical Fraternity** - *Vice President of Recruitment* <span style="float:right;">**January 2021 - May 2024**</span>  
+
+- Organized 25+ weekly meetings for aspiring medical students; administered service hours and fundraising goals of over $1000+ for students to complete; initiated discourse on social determinants of health and public health impact
+- Enhanced strong curriculum for premedical students on preparation for medical school and academic excellence during undergraduate years; coordinated over 10+ workshops for premedical students to improve professional and personal  skills
+- Facilitated physician and alumni networking events for over 60+ members within the fraternity; worked with physicians from various medical concentrations to provide a diverse perspective on the healthcare industry
+
+**Berkeley Model United Nations** - *Committee Member, Head Chair, Deputy of Curriculum* <span style="float:right;">**September 2020 - May 2023**</span>  
+
+- Demonstrated expertise in mentoring 30+ students from 10+  middle schools and high schools around the Bay Area on establishing a model united nations program within their respective schools; introduced fundamental procedures and roles
+- Chaired a Commission on Science and Technology committee discussing the effects of technology during the COVID-19 pandemic with 100+ students; orchestrated relevant topics of debate to facilitate discussion among high school students
+
+**Kidney Disease Screening and Awareness Program** - *General Outreach/Publicity Member* <span style="float:right;">**January 2021 - May 2022**</span>                
+
+- Conducted patient calls for 20+ patients; created a safe environment for patients to share their experiences during the pandemic and raised awareness by providing resources and information for improving and maintenance of good health
+- Designed over 10+ infographics regarding kidney disease for surrounding communities to increase awareness on kidney health; improved accessibility to transparency on health and medical information
+- Executed preparations for free kidney disease screenings for the medically underserved communities within the Bay Area and performed routine public health and medical training for students prior to attending the screenings
+
+## PUBLICATIONS AND APPEARANCES
+- “Commercial Determinants of Health and the Private Sector; Family Planning and Fertility.” *World Health Organization Committee*. Published by Berkeley Model United Nations, 2022. 
+- “Implications of Artificial Intelligence within the Healthcare System; Data and Justice: Managing Data’s Effects on Vulnerable Communities.” *Commission on Science and Technology for Development Committee*. Published by Berkeley Model United Nations, 2021. 
+- “Technology Acceleration During the COVID-19 Pandemic; Global Data Privacy.” *Commission on Science and Technology for Development Committee*. Published by Berkeley Model United Nations, 2020. 
+
+## SKILLS
+- **Technical Skills** - Proficiency in R and SAS language programming, Proficiency in Microsoft Office Excel and Word
+- **Relevant Skills** - Quantitative/Qualitative research, Public speaking, Leadership, Organized, Disciplined, Communication
 

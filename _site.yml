@@ -1,0 +1,16 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "ABOUT ME"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<mkr2158@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/mataratt/
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/matariyarattanapan/
+output:
+  html_document:
+    theme: cosmo
