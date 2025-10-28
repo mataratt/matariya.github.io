@@ -16,7 +16,7 @@ Hi everyone! My name is Matariya, but I go by Mati for short.
 I am currently a **Master of Public Health student at the Mailman School of Public Health at Columbia University** specializing in **Epidemiology** with a certificate in *Biostatistics and Public Health Data Science*. During my free time, I love to try new restaurants around the city with my friends. 
 
 - Learn more about [me](about.html) and my experiences so far!
-- Check out these plots I made using
+- Check out these [plots](dashboard.html) I made using data from the **National Oceanic and Atmospheric Association (NOAA)**.
 
 
 

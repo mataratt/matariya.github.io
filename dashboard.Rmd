@@ -120,7 +120,7 @@ noaa_df |>
 
 These figures are generated from data from the **National Oceanic and Atmospheric Association (NOAA)** with a specific focus on New York. 
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Figure 1
@@ -149,13 +149,13 @@ noaa_df |>
     colors = "viridis"
   ) |> 
   layout(
-    title = list(text = "Average Monthly Precipitation (2007–2010)"),
+    title = list(text = "Average Monthly Precipitation by Month (2007–2010)"),
     xaxis = list(title = "Month"),
     yaxis = list(title = "Average Precipitation (mm)")
   )
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Figure 2

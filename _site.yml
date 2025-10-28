@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "ABOUT ME"
       href: about.html
-    - text: "Dashboard"
+    - text: "DASHBOARD"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<mkr2158@cumc.columbia.edu>
