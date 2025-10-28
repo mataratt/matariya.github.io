@@ -8,9 +8,14 @@ output:
   <img src="images/matariya_headshot.jpg" width="250" style="border-radius:50%; box-shadow:0px 4px 10px;">
 </div>
 
-<h1 style="text-align:center;">Matariya Krystal Rattanapan</h1>
-<h4 style="text-align:center;">Phone: (714)-261-6782</h4>
-<h4 style="text-align:center;">Email: mkr2158@cumc.columbia.edu</h4>
+<center>
+
+# Matariya Krystal Rattanapan 
+#### Phone: (714)-261-6782
+#### Email: mkr2158@cumc.columbia.edu
+
+</center>
+
 
 ## EDUCATION
 **Mailman School of Public Health, Columbia University (New York, NY)** <span style="float:right;">**Expected May 2026**</span>     
@@ -24,6 +29,14 @@ B.A. Public Health | Minor: Public Policy
 - *Relevant Coursework: Intro to Epidemiology/Human Disease,  Intro to Probability/Statistics in Biology + Public Health (using R)*  
   
 ## WORK EXPERIENCE
+
+**EXEC (Exercise & Memory) Study, Columbia University (New York, NY)** - *Research Assistant* <span style="float:right;">**May 2025 - Present**</span>          
+
+- Facilitated in-person study visits for both intervention and control participants, administering baseline neurocognitive assessments and supporting exercise or health education sessions 
+- Conducted literature reviews, data cleaning, and descriptive analyses for an NIH-funded study examining the impact of home-based exercise on cognitive function among participants with stage 3-4 chronic kidney disease
+- Managed recruitment tracking and quality assurance by maintaining participant flow datasets and verifying REDCap data accuracy to maintain protocol adherence 
+
+
 **Eye Physicians of the East Bay (Oakland, CA)** - *Medical Assistant/Ophthalmic Technician* <span style="float:right;">**July 2022 - March 2024**</span>      
 
 - Professionally facilitated comprehensive testings and screenings for eye care within ophthalmology for 25+ patients daily in preparation for routine exams and surgical procedures to aid in the doctors’ efficiency and effectiveness

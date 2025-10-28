@@ -1,14 +1,22 @@
 ---
-title: "Homepage"
+title: "Data Science I Homework 4"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  html_document
 ---
+<center>
 
-Hi everyone! My name is Matariya, but I go by Mati for short. Welcome to my website!
+### Welcome to Mati's Website!
 
-I am currently a Master of Public Health student at the Mailman School of Public Health at Columbia University specializing in Epidemiology with a certificate in Biostatistics and Public Health Data Science. 
+</center>
+
+![](https://miro.medium.com/1*U3WRRwLx3zeDkHmIVGLJdw.gif)
+
+Hi everyone! My name is Matariya, but I go by Mati for short. 
+
+I am currently a **Master of Public Health student at the Mailman School of Public Health at Columbia University** specializing in **Epidemiology** with a certificate in *Biostatistics and Public Health Data Science*. During my free time, I love to try new restaurants around the city with my friends. 
+
+- Learn more about [me](about.html) and my experiences so far!
+- Check out these plots I made using
 
 
 

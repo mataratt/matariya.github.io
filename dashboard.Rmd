@@ -1,0 +1,210 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+```
+
+```{r}
+data("ny_noaa")
+
+noaa_df =
+  ny_noaa |> 
+  janitor::clean_names() |> 
+  mutate(
+    date = as.Date(date),
+    year = lubridate::year(date),
+    month = lubridate::month(date),
+    month = case_match(month,
+                       1 ~ "January",
+                       2 ~ "February",
+                       3 ~ "March", 
+                       4 ~ "April",
+                       5 ~ "May",
+                       6 ~ "June",
+                       7 ~ "July",
+                       8 ~ "August",
+                       9 ~ "September", 
+                       10 ~ "October",
+                       11 ~ "November",
+                       12 ~ "December"
+    )
+  ) |> 
+  filter(year %in% c(2007, 2008, 2009, 2010))
+
+
+scatter_noaa = 
+noaa_df |>
+  mutate(
+    date = as.Date(date),
+    prcp = as.numeric(prcp),
+    year = year(date),
+    month = month(date, label = TRUE, abbr = FALSE)
+  ) |>
+  group_by(year, month) |>
+  summarise(mean_prcp = mean(prcp, na.rm = TRUE)) |>
+  mutate(
+    month = factor(month, levels = month.name),
+    mean_prcp = round(mean_prcp, 2)
+    ) |>
+  arrange(year, month) |>
+  plot_ly(
+    x = ~month,
+    y = ~mean_prcp,
+    color = ~factor(year),
+    type = "scatter",
+    mode = "lines+markers",
+    colors = "viridis"
+  ) |> 
+  layout(
+    title = list(text = "Average Monthly Precipitation (2007–2010)"),
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Mean Precipitation (mm)")
+  )
+
+
+scatter_snow_noaa =
+noaa_df |> 
+  drop_na() |> 
+  mutate(
+    tmin = as.numeric(tmin),
+    tmin = tmin/10
+  ) |> 
+  plot_ly(
+    x = ~tmin,
+    y = ~snow,
+    color = ~snow,
+    type = "scatter", mode = "markers", alpha = 0.5
+  ) |> 
+  layout(
+    title = "Snowfall vs. Minimum Temperature (°C) (2007-2010)",
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Snowfall (mm)")
+  )
+
+violin_noaa =  
+noaa_df |>
+  filter(
+    month(date, label = TRUE, abbr = FALSE) %in% c("November", "December", "January", "February", "March"),
+    !is.na(snow),
+    snow > 0
+  ) |>
+  mutate(
+    month = month(date, label = TRUE, abbr = FALSE),
+    month = factor(month, levels = c("November", "December", "January", "February", "March")),
+    label = str_c("Month: ", month, "Year: ", year, "Snowfall (mm): ", snow) 
+    )|>
+  plot_ly(
+    x = ~month,
+    y = ~snow,
+    color = ~month,
+    text = ~label,
+    type = "violin"
+  ) |> 
+  layout(
+    title = "Distribution of Snowfall from November-March (2007-2010)",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Snowfall (mm)")
+  )
+
+```
+
+These figures are generated from data from the **National Oceanic and Atmospheric Association (NOAA)** with a specific focus on New York. 
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Figure 1
+
+```{r}
+noaa_df |>
+  mutate(
+    date = as.Date(date),
+    prcp = as.numeric(prcp),
+    year = year(date),
+    month = month(date, label = TRUE, abbr = FALSE)
+  ) |>
+  group_by(year, month) |>
+  summarise(mean_prcp = mean(prcp, na.rm = TRUE)) |>
+  mutate(
+    month = factor(month, levels = month.name),
+    mean_prcp = round(mean_prcp, 2)
+    ) |>
+  arrange(year, month) |>
+  plot_ly(
+    x = ~month,
+    y = ~mean_prcp,
+    color = ~factor(year),
+    type = "scatter",
+    mode = "lines+markers",
+    colors = "viridis"
+  ) |> 
+  layout(
+    title = list(text = "Average Monthly Precipitation (2007–2010)"),
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Average Precipitation (mm)")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Figure 2
+
+```{r}
+noaa_df |> 
+  drop_na() |> 
+  mutate(
+    tmin = as.numeric(tmin),
+    tmin = tmin/10
+  ) |> 
+  plot_ly(
+    x = ~tmin,
+    y = ~snow,
+    color = ~snow,
+    type = "scatter", mode = "markers", alpha = 0.5
+  ) |> 
+  layout(
+    title = "Snowfall vs. Minimum Temperature (°C) (2007-2010)",
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Snowfall (mm)")
+  )
+```
+
+### Figure 3
+
+```{r}
+noaa_df |>
+  filter(
+    month(date, label = TRUE, abbr = FALSE) %in% c("November", "December", "January", "February", "March"),
+    !is.na(snow),
+    snow > 0
+  ) |>
+  mutate(
+    month = month(date, label = TRUE, abbr = FALSE),
+    month = factor(month, levels = c("November", "December", "January", "February", "March")),
+    label = str_c("Month: ", month, "Year: ", year, "Snowfall (mm): ", snow) 
+    )|>
+  plot_ly(
+    x = ~month,
+    y = ~snow,
+    color = ~month,
+    text = ~label,
+    type = "violin"
+  ) |> 
+  layout(
+    title = "Distribution of Snowfall from November-March (2007-2010)",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Snowfall (mm)")
+  )
+```
+
